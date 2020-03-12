@@ -1,5 +1,5 @@
-<h1>Usuarios Registrados</h1>
 <div class="clear"></div>
+<h1>Usuarios Registrados</h1>
 <table class="table">
     <thead>
       <tr>
@@ -12,13 +12,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>Pérez</td>
-        <td></td>
-        <td>4445555</td>
-        <td>Calle 2</td>
+      <tr *ngFor="let item of users">
+        <td>{{item.firstName}}</td>
+        <td>{{item.secondName}}</td>
+        <td>{{item.firstSurname}}</td>
+        <td>{{item.secondSurname}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.address}}</td>
       </tr>
     </tbody>
   </table>
